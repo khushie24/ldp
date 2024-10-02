@@ -6,10 +6,17 @@
 }
 .container {
   /*background-image: url(bgimgsundr.jpg);*/
-  background-size: cover;
-  background-repeat: no-repeat;
+  
+  
   height: 100%;
   width: 100%;
+}
+.container-fluid{
+
+background-color: white;
+}
+.navbar{
+  padding: 0rem;
 }
 
 .secondsection {
@@ -21,11 +28,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .intropara {
   height: 100%;
   width: 100%;
-
   padding: 3rem;
   font-size: 1.7rem;
   font-family: "Poppins variant0", Tofu;
@@ -64,7 +71,7 @@
   height: 48rem;
 }
 
-/* Google Fonts - Poppins */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
@@ -171,27 +178,48 @@ a.button:hover {
     visibility: visible;
   }
 }
-.main {
-  border-radius: 1rem;
 
-}
-.thirdsection {
-  margin-top: 6rem;
-}
+
 .fourthsection,
 .fourth2 {
-  height: 33rem;
-  width: 100%;
+  max-height: 125rem;
+  max-width: 100%;
+  margin: 5rem;
   margin-top: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
+.card .card-img-top{
+  max-height: 18rem;
+  max-width: 20rem;
+}
+  .card-text{
+    max-height: 5rem;
+  
+  }
 .card {
-  height: 4rem;
-  width: 12rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  height: 0rem;
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: lavenderblush;
+  box-shadow: 15px 15px 15px black;
+}
+.card:hover{
+  transform: scale(1.06); 
+  transition: 0.5s linear;
+  background-color: lavender;
+  
+}
+.card-title{
+  font-size: 1.5rem;
+  color: purple;
+  font-weight: 900;
+  max-height: 2.5rem;
 }
 
 #services {
@@ -207,7 +235,7 @@ a.button:hover {
 }
 .fs {
   
-  margin-top: 1rem;
+  margin-top: rem;
   margin-bottom: 1rem;
 }
 body {
@@ -215,12 +243,11 @@ body {
 }
 
 .foot {
-  height: 33rem;
+  max-height: 43rem;
   width: 100%;
   text-align: center;
   padding: 2rem;
-  
-  background-color: white;
+  background-color: lavenderblush;
 }
 .foots {
   font-size: 1.5rem;
@@ -233,12 +260,17 @@ body {
   font-size: 0.8rem;
 
 }
+.footer{
+  margin-top: 10rem;
+  
+}
 .foot i {
   color: purple;
   font-size: 2rem;
   margin: 1rem;
   font-weight: 1rem;
 }
+
 .foot ul li {
   list-style: none;
 }
@@ -260,4 +292,73 @@ body {
     margin: 0;
     padding: 0;
     color: black;
+}
+.sectionbody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+@media (min-width:750px){
+  .fourthsection, .fourth2{
+    flex-direction: row-reverse;
+
+  }
+}
+.sectionheader {
+  align-items: center;
+  text-align: center;
+}
+.majortext {
+  font-size: 2rem;
+  color: orangered;
+  font-weight: 600;
+}
+.minortext {
+  font-size: 1rem;
+  color: #fdcdba;
+}
+
+.sectionbody {
+
+  max-height: 50rem;
+  max-width: 70rem;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+.card-body button{
+  height: 3rem;
+  width: 8rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: purple;
+  font-weight: 700;
+  border: 2px solid white;
+  /*background-image: -webkit-linear-gradient(
+    225deg,
+    rgb(43, 2, 51) 0%,
+    rgb(58, 5, 58) 100%
+  )*/
+}
+  
+ .thirdsection{
+  margin-bottom: 6rem;
+ } 
+.card-body button:hover{
+  width: 10rem;
+  color: purple;
+  background: plum;
+  border: 2px solid purple;
+  transition: 0.65s linear ;
+}
+main hr{
+
+  font-weight: 900;
+  margin: rem;
+  color: purple;
+  max-width: 95%;
+  border: 1px solid black;
 }
